@@ -65,6 +65,13 @@
             "MinLength": "10",
             "MaxLength": "64",
             "ConstraintDescription": "Must be a valid FQDN."
+        },
+
+        "InstanceType": {
+            "Description": "EC2 instance type",
+            "Type": "String",
+            "Default": "t2.micro",
+            "AllowedValues": ["t2.micro", "t2.small", "t2.medium", "t2.large"]
         } 
     }
 }
